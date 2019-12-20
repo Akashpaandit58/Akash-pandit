@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var voteA = 0;
+            var voteB = 0;
+            var x = document.getElementById("voteA");
+            var y= document.getElementById("voteB")
+            x.addEventListener("voteA",voteCandidateA);
+            y.addEventListener("voteB",voteCandidateB);
+            function voteCandidateA(){
+            voteA = voteA +1;
+            document.getElementById('voteA').innerHTML += voteA;
+            }
+            
+            function voteCandidateB(){
+            voteB = voteB +1;
+            document.getElementById('voteB').innerHTML += voteB;
+            }
+            
+            </script>
+            
+        <link rel="Stylesheet" href="vote.css">
+
+         <title></title>
+    
+    </head>
+    <body>
+            <div style="border-style:solid;border-Wwidth: 1px;WIDTH:700PX;HEIGHT:600PX;DISPLAY: INLINE-BLOCK;MARGIN-LEFT: 30%"">
+                    <h1><B>VOTING</B></h1><HR> </h1>
+                
+                  <DIV>
+                      COUNT
+                  </DIV><hr>
+<div style="display:inline-block;margin-left:10%;position:static;">
+    <div id="voteA">  <p>    0  </p></div>
+<img src="hr.jfif" width="40%" height="50%">
+<div id="voteB">  <p>    0  </p></div>
+<img src="tom.jfif" width="40%" height="30%">
+</div> 
+<div>
+    <center>
+        <button oneclick ="voteCandidateA();">Vote Candidate One!</button>
+        <button oneclick="vote">Vote Candidate Two!</buttoer>
+</div>
+            </div>
+</div>                
+    </body>
+</html>
